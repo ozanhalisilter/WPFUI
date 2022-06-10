@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFDemoUI.Views"
-        mc:Ignorable="d" FontSize="20"
+        mc:Ignorable="d" FontSize="20" 
         Title="ShellView" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
@@ -14,5 +14,20 @@
             <RowDefinition Height="auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
+
+
+        <ComboBox Grid.Row="0" x:Name="People" SelectedItem="{Binding SelectedPerson}">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding FullName}"/>
+                        <TextBlock Text="- Are they alive: "/>
+                        <CheckBox VerticalAlignment="Center" IsChecked="{Binding IsAlive}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+
+        <TextBlock x:Name="SelectedPerson_FullName" Grid.Column="1" Grid.Row="1"/>
     </Grid>
 </Window>
