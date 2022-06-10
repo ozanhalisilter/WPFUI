@@ -1,11 +1,16 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2003
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDemoUI", "WPFDemoUI\WPFDemoUI.csproj", "{31381DF4-DE6B-4645-BFD3-CCDD2D478D3C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoLibrary", "DemoLibrary\DemoLibrary.csproj", "{AD2C299C-0242-4E37-A635-3F9D3C293486}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{777F51D1-9B00-48B5-97A6-F2088F63ACF2}"
+	ProjectSection(SolutionItems) = preProject
+		packages\Caliburn.Micro.3.2.0\Caliburn.Micro.3.2.0.nupkg = packages\Caliburn.Micro.3.2.0\Caliburn.Micro.3.2.0.nupkg
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
